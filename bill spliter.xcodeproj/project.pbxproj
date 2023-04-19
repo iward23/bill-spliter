@@ -13,6 +13,7 @@
 		1F05DE3229EF071B00A67BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F05DE3029EF071B00A67BA6 /* Main.storyboard */; };
 		1F05DE3429EF071D00A67BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F05DE3329EF071D00A67BA6 /* Assets.xcassets */; };
 		1F05DE3729EF071D00A67BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F05DE3529EF071D00A67BA6 /* LaunchScreen.storyboard */; };
+		1F05DE4129F05FE500A67BA6 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05DE4029F05FE500A67BA6 /* BillViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1F05DE3329EF071D00A67BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F05DE3629EF071D00A67BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F05DE3829EF071D00A67BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F05DE4029F05FE500A67BA6 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1F05DE2A29EF071B00A67BA6 /* AppDelegate.swift */,
 				1F05DE2C29EF071B00A67BA6 /* SceneDelegate.swift */,
 				1F05DE2E29EF071B00A67BA6 /* ViewController.swift */,
+				1F05DE4029F05FE500A67BA6 /* BillViewController.swift */,
 				1F05DE3029EF071B00A67BA6 /* Main.storyboard */,
 				1F05DE3329EF071D00A67BA6 /* Assets.xcassets */,
 				1F05DE3529EF071D00A67BA6 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				1F05DE2F29EF071B00A67BA6 /* ViewController.swift in Sources */,
 				1F05DE2B29EF071B00A67BA6 /* AppDelegate.swift in Sources */,
+				1F05DE4129F05FE500A67BA6 /* BillViewController.swift in Sources */,
 				1F05DE2D29EF071B00A67BA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

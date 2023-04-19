@@ -23,6 +23,15 @@ class ViewController: UIViewController {
     @IBOutlet var amountOfPeople: UILabel!
     
   
+    @IBAction func calculate(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "calculate", sender: "arr")
+    
+    }
+    
+    
+    
+  
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {
         
         if segmentedControl1.selectedSegmentIndex == 0
@@ -63,11 +72,7 @@ class ViewController: UIViewController {
         amountOfPeople.text = String(Int(stepper1.value))
     }
     
-    
-    @IBAction func button(_ sender: Any) {
-    }
-    
-    
+        
     
     
     
