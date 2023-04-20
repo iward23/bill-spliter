@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 }
 
-
+    @IBOutlet var addPerson: UILabel!
+    
     @IBOutlet var amount: UITextField!
     @IBOutlet var segmentedControl1: UISegmentedControl!
     @IBOutlet var slider1: UISlider!
@@ -25,11 +26,15 @@ class ViewController: UIViewController {
   
     @IBAction func calculate(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "calculate", sender: "arr")
-    
+        
+        var amount = Double(amount.text!)!
+        amount = (Double(slider1.value) * amount) + amount
+        
+        total.text = String((amount))
     }
     
     
+    @IBOutlet var total: UILabel!
     
   
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {

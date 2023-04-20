@@ -84,12 +84,26 @@
                                     <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="sFQ-Pk-lkK"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obx-g2-E9q">
+                                <rect key="frame" x="97" y="681" width="218" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVh-Vc-wUc">
+                                <rect key="frame" x="-17" y="712" width="359" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-5V-hEx">
-                                <rect key="frame" x="159" y="765" width="75" height="53"/>
+                                <rect key="frame" x="142" y="765" width="108" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
                                 <connections>
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUK-kg-9rd"/>
                                 </connections>
@@ -99,41 +113,24 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
                     <connections>
+                        <outlet property="addPerson" destination="fVh-Vc-wUc" id="amo-No-kd6"/>
+                        <outlet property="amount" destination="OU3-dR-vlQ" id="chR-V0-1dy"/>
                         <outlet property="amountOfPeople" destination="LHG-ju-7cM" id="yMK-87-PkM"/>
                         <outlet property="customTip" destination="dep-Ju-m04" id="qgT-hj-5jF"/>
                         <outlet property="segmentedControl1" destination="OXW-cE-CZD" id="OMQ-Dx-C11"/>
                         <outlet property="slider1" destination="HVH-dw-nqm" id="9Jh-Cg-9bm"/>
                         <outlet property="stepper1" destination="Trk-YL-FeT" id="bZ0-WX-YY8"/>
-                        <segue destination="hbv-OC-raY" kind="show" identifier="calculate" id="RXC-Y0-lHd"/>
+                        <outlet property="total" destination="obx-g2-E9q" id="B9c-Ih-nWd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.89312977099236" y="3.5211267605633805"/>
         </scene>
-        <!--Bill View Controller-->
-        <scene sceneID="5TI-Br-ked">
-            <objects>
-                <viewController id="hbv-OC-raY" customClass="BillViewController" customModule="bill_spliter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uJV-iy-KKj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="IvT-tG-k2W"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="59g-h8-5VE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="udO-pd-eGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="876" y="4"/>
-        </scene>
     </scenes>
     <resources>
         <image name="0.circle" catalog="system" width="128" height="123"/>
         <image name="50.circle" catalog="system" width="128" height="123"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
