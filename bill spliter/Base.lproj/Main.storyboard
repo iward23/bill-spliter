@@ -54,7 +54,7 @@
                                     <action selector="amount:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="IVy-Ty-FuF"/>
                                 </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" minimumValueImage="0.circle" catalog="system" maximumValueImage="10.circle" translatesAutoresizingMaskIntoConstraints="NO" id="HVH-dw-nqm">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" minimumValueImage="0.circle" catalog="system" maximumValueImage="50.circle" translatesAutoresizingMaskIntoConstraints="NO" id="HVH-dw-nqm">
                                 <rect key="frame" x="66" y="471" width="260" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-5V-hEx">
-                                <rect key="frame" x="142" y="765" width="75" height="53"/>
+                                <rect key="frame" x="159" y="765" width="75" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
@@ -104,7 +104,7 @@
                         <outlet property="segmentedControl1" destination="OXW-cE-CZD" id="OMQ-Dx-C11"/>
                         <outlet property="slider1" destination="HVH-dw-nqm" id="9Jh-Cg-9bm"/>
                         <outlet property="stepper1" destination="Trk-YL-FeT" id="bZ0-WX-YY8"/>
-                        <segue destination="hbv-OC-raY" kind="show" identifier="secondScreen" id="RXC-Y0-lHd"/>
+                        <segue destination="hbv-OC-raY" kind="show" identifier="calculate" id="RXC-Y0-lHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -130,7 +130,7 @@
     </scenes>
     <resources>
         <image name="0.circle" catalog="system" width="128" height="123"/>
-        <image name="10.circle" catalog="system" width="128" height="123"/>
+        <image name="50.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
